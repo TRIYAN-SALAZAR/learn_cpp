@@ -13,6 +13,7 @@
 
 using namespace std;
 
+
 /*
     Variables locales y globales con el mismo nombre
     Cuando una variable local y global comparten el mismo nombre:
@@ -22,7 +23,6 @@ using namespace std;
       mediante el operador de resolución de ámbito (::).
 */
 int globalVariableX = 10; // Variable global
-
 int main()
 {
     int localVariableX = 5; // Variable local en la función main
@@ -62,3 +62,17 @@ int main_two() {
 
 int extern_X = 10; // Definición de la variable global y
 // La variable global y se puede utilizar en cualquier parte del programa, incluso en otros archivos.
+
+
+
+/*
+    Variables estáticas
+    Las variables estáticas son variables que mantienen su valor entre llamadas a funciones.
+    Se declaran utilizando la palabra clave static.
+*/
+int main_three() {
+    static int staticVariable = 0; // Variable estática
+    staticVariable++;
+    cout << "Valor de la variable estática: " << staticVariable << endl; // Output: 1, 2, 3, ...
+    return 0;
+}
