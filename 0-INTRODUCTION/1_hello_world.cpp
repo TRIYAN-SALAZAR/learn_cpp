@@ -8,7 +8,6 @@
     Description: This program serves as a basic introduction to C++ programming.
     Version: 1.0
     Last Updated: 01/05/2025
-    License: MIT
 */
 
 #include<iostream>
