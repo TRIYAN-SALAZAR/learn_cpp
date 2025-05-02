@@ -13,7 +13,14 @@
 
 using namespace std;
 
-// Variable global (fuera de la función main)
+/*
+    Variables locales y globales con el mismo nombre
+    Cuando una variable local y global comparten el mismo nombre:
+
+    - La variable local tiene prioridad dentro del bloque en el que se declara.
+    - La variable global está eclipsada, pero sigue existiendo y se puede acceder a ella 
+      mediante el operador de resolución de ámbito (::).
+*/
 int globalVariableX = 10; // Variable global
 
 int main()
@@ -40,3 +47,18 @@ int main()
     
     return 0;
 }
+
+
+/*
+    Usando la palabra reservada extern
+    La palabra reservada extern se utiliza para declarar una variable global en otro archivo o en otro bloque de código.
+    En este caso, se utiliza para declarar la variable global y en el bloque else.
+*/
+extern int extern_X; // Declaración de la variable global X
+int main_two() {
+    cout << extern_X ; // Output: 10
+    return 0;
+}
+
+int extern_X = 10; // Definición de la variable global y
+// La variable global y se puede utilizar en cualquier parte del programa, incluso en otros archivos.
