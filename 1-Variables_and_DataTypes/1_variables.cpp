@@ -16,21 +16,17 @@ using namespace std;
 int main()
 {
     int x = 5;
-    cout << x << " ";
-    x = 8; // we can update the value also
+    cout << x << " "; // Output: 5
+    x = 7; // Update the value of x
     cout << x << " ";
 
     int y = 10;
     cout << y;
 
-    // Other variables declaration examples
-    //  Declaring float variable
+    //Otros ejemplos de variables de como declarar variables
     float simpleInterest;
-
-    // Declaring integer variable
     int time, speed;
-
-    // Declaring character variable
     char var;
+    
     return 0;
 }
