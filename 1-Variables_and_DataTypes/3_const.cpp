@@ -3,7 +3,6 @@
     Las variables constantes son variables que no pueden ser modificadas despues de su declaracion.
     Se declaran utilizando la palabra clave const.
 
-    Date: 02/05/2025
     Author: Triyan Salazar
     Description: This program demonstrates the use of variables.
     Version: 1.0
