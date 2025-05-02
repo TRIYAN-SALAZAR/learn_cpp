@@ -3,11 +3,10 @@
     It declares an integer variable, assigns it a value, and prints it to the console.
     The program also shows how to update the value of a variable.
 
-    Date: 01/05/2025
     Author: Triyan Salazar
     Description: This program demonstrates the use of variables.
     Version: 1.0
-    Last Updated: 01/05/2025
+    Last Updated: 02/05/2025
 */
 
 #include <iostream>

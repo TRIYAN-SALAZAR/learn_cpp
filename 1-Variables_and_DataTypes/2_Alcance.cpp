@@ -2,11 +2,10 @@
     This is a simple C++ program that demonstrates the use of variables.
     Fot show the scope of variables like local variables and global variables in c++.
 
-    Date: 01/05/2025
     Author: Triyan Salazar
     Description: This program demonstrates the use of variables.
     Version: 1.0
-    Last Updated: 01/05/2025
+    Last Updated: 02/05/2025
 */
 
 #include <iostream>
