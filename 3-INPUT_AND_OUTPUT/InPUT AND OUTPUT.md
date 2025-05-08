@@ -8,7 +8,7 @@ En C++ tenemos tres librerias para manejar el flujo de datos:
 
 Cada una con sus propias formas de trabajar. En este caso nos enfocaremos en la libreria `iostream` y en sus objetos `cout` y `cin`.
 
-Para mostrar informacion con el objeto `cout` usamos el operador de insecion `<<`. Por otro lado para leer datos de entrada usamos el operador de extraccion `>>` junto al objeto `cin`.
+Para mostrar informacion con el objeto `cout` usamos el operador de insercion `<<`. Por otro lado para leer datos de entrada usamos el operador de extraccion `>>` junto al objeto `cin`.
 
 <b>Ejemplo</b>
 
