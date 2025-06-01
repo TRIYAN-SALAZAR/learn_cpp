@@ -1,0 +1,3 @@
+sin apuntes por el momento...
+Debido a que ya tengo conocimiento de las estructuras de control y repeticion.
+En un futuro, agregare apuntes.
