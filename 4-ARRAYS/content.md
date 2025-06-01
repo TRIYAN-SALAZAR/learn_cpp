@@ -41,3 +41,21 @@ Pero esa es una forma de declarar un arreglo, caso el cual, al momento de declar
 ```
 
 NOTA: Todo arreglo se inicialice o no con valores, este ocupara espacio.
+
+### Tamaño de un arreglo
+El tamaño de un arreglo se puede obtener utilizando el operador `sizeof`, el cual devuelve el tamaño en bytes del tipo de dato del arreglo multiplicado por la cantidad de elementos que contiene.
+```cpp
+    int edades[5];
+    cout << "Tamaño del arreglo: " << sizeof(edades) << " bytes" << endl; // 20 bytes (5 * 4 bytes)
+    cout << "Cantidad de elementos del arreglo: " << sizeof(edades) / sizeof(edades[0]) << endl; // 5 elementos
+```
+
+### Acceso a los elementos de un arreglo
+Para acceder a los elementos de un arreglo, se utiliza el índice del elemento entre corchetes `[]`. El índice comienza en 0, por lo que el primer elemento del arreglo se encuentra en la posición 0, el segundo en la posición 1, y así sucesivamente.
+```cpp
+    int edades[5] = {20, 21, 22, 23, 24};
+
+    cout << "Primer elemento: " << edades[0] << endl; // 20
+    cout << "Segundo elemento: " << edades[1] << endl; // 21
+    cout << "Tercer elemento: " << edades[2] << endl; // 22
+```
