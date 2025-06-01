@@ -59,3 +59,66 @@ Para acceder a los elementos de un arreglo, se utiliza el índice del elemento e
     cout << "Segundo elemento: " << edades[1] << endl; // 21
     cout << "Tercer elemento: " << edades[2] << endl; // 22
 ```
+
+### Iteración sobre un arreglo
+Haciendo uso de los bucles de repeticion, podemos iterar sobre un arreglo. Con el fin de modificar y/o imprimir los elementos del arreglo. Donde el ciclo mas utilizado para iterar sobre un arreglo es el bucle `for`, pero también se puede utilizar el bucle `while` o `do-while`. A continuación, se muestra un ejemplo de cómo iterar sobre un arreglo utilizando ambos tipos de bucles.
+
+```cpp
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        int edades[5] = {20, 21, 22, 23, 24};
+
+        // Iteración con un bucle for
+        for (int i = 0; i < 5; i++) {
+            cout << "Edad " << i + 1 << ": " << edades[i] << endl;
+        }
+
+        // Iteración con un bucle while
+        int i = 0;
+    while (i < 5) {
+        cout << "Edad " << i + 1 << ": " << edades[i] << endl;
+        i++;
+    }
+```
+
+Pero tambien se tiene otra forma de iterar sobre un arreglo, utilizando un bucle `for` mejorado, el cual es una forma mas sencilla de iterar sobre un arreglo, sin necesidad de utilizar un índice. Haciendo al codigo mas limpio y facil de escribir.
+
+```cpp
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        int edades[5] = {20, 21, 22, 23, 24};
+
+        // Iteración con un bucle for mejorado
+        for (int edad : edades) {
+            cout << "Edad: " << edad << endl;
+        }
+
+        return 0;
+    }
+```
+
+Y para modificar los elementos hacienndo uso del bucle for mejorado, se puede hacer de la siguiente manera:
+```cpp
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        int edades[5] = {20, 21, 22, 23, 24};
+
+        // Modificación de los elementos del arreglo
+        for (int &edad : edades) {
+            edad += 1; // Incrementa cada edad en 1
+        }
+
+        // Imprimir las edades modificadas
+        for (int edad : edades) {
+            cout << "Edad modificada: " << edad << endl;
+        }
+
+        return 0;
+    }
+```
