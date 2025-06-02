@@ -44,7 +44,7 @@ Un arreglo dinámico es aquel cuyo tamaño puede cambiar durante la ejecución d
     }
 ```
 
-### Standar Library STL
+### Dynamic Size Array - Standar Library STL
 La biblioteca estándar de C++ (STL) proporciona una clase llamada `std::vector` que permite crear arreglos dinámicos de manera más sencilla y segura. Un `std::vector` puede crecer y decrecer según sea necesario, y maneja automáticamente la memoria.
 
 ```cpp
