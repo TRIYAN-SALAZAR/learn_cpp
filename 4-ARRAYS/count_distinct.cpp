@@ -1,3 +1,11 @@
+/*
+    Author: Triyan Salazar
+    Description: Programa para contar cuantos numeros distintos hay.
+    Version: 1.0
+    Last Updated: 6/06/2025
+*/
+
+
 #include <iostream>
 
 int count_distinct_in_a_array(int arr[], int size_arr) {
