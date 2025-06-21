@@ -128,3 +128,12 @@ output en un sistema de 64 bits:
 - El operador `&` se utiliza para obtener la dirección de memoria de una variable.
 - El operador `*` se utiliza para acceder al valor almacenado en la dirección de memoria a la que apunta un puntero.
 - El tamaño de un puntero depende de la arquitectura del sistema y es independiente del tipo de dato al que apunta.
+
+### Aplicaciones de Punteros
+1. **Pasar grandes objetos**: Los punteros permiten pasar grandes estructuras o clases a funciones sin necesidad de copiarlas, lo que mejora la eficiencia.
+2. **Asignacion de memoria dinamica**: Los punteros son esenciales para la asignación dinámica de memoria durante el tiempo de ejecución, utilizando operadores como `new` y `delete`.
+3. **Implementación de estructuras de datos**: Los punteros son fundamentales para implementar estructuras de datos como listas enlazadas, árboles y grafos, donde los elementos necesitan apuntar a otros elementos.
+4. **Manipulación de arreglos**: Los punteros permiten manipular arreglos de manera más eficiente.
+5. **Retorno de múltiples valores**: Los punteros permiten retornar múltiples valores desde una función al modificar los valores a través de su dirección de memoria.
+
+Entre muchas otras operaciones los punteros son una herramienta crucial para realizar multitud de tareas en C++ que requieren manipulación directa de memoria y estructuras de datos complejas.
