@@ -137,3 +137,22 @@ output en un sistema de 64 bits:
 5. **Retorno de múltiples valores**: Los punteros permiten retornar múltiples valores desde una función al modificar los valores a través de su dirección de memoria.
 
 Entre muchas otras operaciones los punteros son una herramienta crucial para realizar multitud de tareas en C++ que requieren manipulación directa de memoria y estructuras de datos complejas.
+
+**NOTA**: se pueden realizar operaciones aritméticas basicas a los punteros, como suma y resta, pero esto no tiene sentido a menos que se realice a un array.
+
+Ejemplo de operaciones aritméticas con punteros:
+```cpp
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        int array[5] = {1, 2, 3, 4, 5};
+        int *puntero = array; // Asignamos la dirección base del array al puntero
+
+        cout << "Primer elemento: " << *puntero << '\n'; // Imprime el primer elemento (1)
+        puntero++; // Incrementamos el puntero para apuntar al siguiente elemento
+        cout << "Segundo elemento: " << *puntero << '\n'; // Imprime el segundo elemento (2)
+
+        return 0;
+    }
+```
