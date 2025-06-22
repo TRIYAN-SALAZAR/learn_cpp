@@ -8,7 +8,7 @@ Lo que brinda a los desarrolladores la capacidad de:
 
 La asignación de memoria dinámica es útil cuando no se conoce el tamaño de la memoria requerido en tiempo de compilación.
 
-## Funciones claves para la asignación de memoria dinámica
+## Puntos Claves Para la Asignación de Memoria Dinámica
 En C++, las funciones clave para la asignación de memoria dinámica son:
 - `new`: Se utiliza para asignar memoria dinámica.
 - `delete`: Se utiliza para liberar memoria previamente asignada con `new`.
@@ -30,7 +30,7 @@ Tambien se puede inicializar la memoria para tipos de datos integrados mediante 
 Tambien se utiliza el operador `new` para asignar un bloque (Array) de memoria.
 `pointer-variable = new data-type[size];`. Donde `size`(Una variable) especifica el número de elementos de un Array.
 
-Ejemplo 1, Asignación de memoria:
+**Ejemplo 1**, Asignación de memoria:
 ```cpp
     #include <iostream>
     using namespace std;
@@ -42,21 +42,21 @@ Ejemplo 1, Asignación de memoria:
 ```
 En este ejemplo, se asigna memoria para un arreglo de 10 enteros. El puntero `ptr` apunta al primer elemento del arreglo.
 
-Ejemplo 2, Accediendo a memoria no inicializada:
+**Ejemplo 2**, Accediendo a memoria no inicializada:
 ```cpp
     #include <iostream>
     using namespace std;
 
     int main() {
         int *ptr = new int[10];
-        cout << *(ptr + 2) << endl; // Acceso a memoria no inicializada>>
+        cout << *(ptr + 2) << endl; // Acceso a memoria no inicializada
         return 0;
     }
 ```
 
 El valor de `*(ptr + 2)` no esta inicializado y puede contener datos basura.
 
-Ejemplo 3, Inicializando y accediendo a memoria dinamica:
+**Ejemplo 3**, Inicializando y accediendo a memoria dinamica:
 ```cpp
     #include <iostream>
     using namespace std;
@@ -70,7 +70,7 @@ Ejemplo 3, Inicializando y accediendo a memoria dinamica:
 ```
 En este ejemplo, se asigna memoria para un arreglo de 5 enteros, se inicializa el tercer elemento atraves de la linea `*(ptr + 2)` y se imprime su valor. En este caso, el valor impreso será *10*.
 
-Ejemplo 4, Desasignación de memoria:
+**Ejemplo 4**, Desasignación de memoria:
 ```cpp
     #include <iostream>
     using namespace std;
@@ -84,7 +84,7 @@ Ejemplo 4, Desasignación de memoria:
 ```
 Despues de usar `delete[]`, la memoria asignada se libera y se es devuelta al sistema. Y establecer `ptr` con `nullptr` evita que el puntero apunte a una dirección de memoria no válida.
 
-Ejemplo 5, Devolviendo direccion de una variable local:
+**Ejemplo 5**, Devolviendo direccion de una variable local:
 ```cpp
     #include <iostream>
     using namespace std;
@@ -102,7 +102,7 @@ Ejemplo 5, Devolviendo direccion de una variable local:
 ```
 La función devuelve la dirección de una variable local, la cual, se destruye una vez que finaliza la ejecución de la función.
 
-Ejemplo 6, Devolución de memoria asignada dinamicamente:
+**Ejemplo 6**, Devolución de memoria asignada dinamicamente:
 ```cpp
     #include <iostream>
     using namespace std;
@@ -118,9 +118,9 @@ Ejemplo 6, Devolución de memoria asignada dinamicamente:
         return 0;
     }
 ```
-La memoria asignada dentro de la funcion `fun` persiste o se mantiene incluso despues de que la funcion finaliza su ejecucion, ya que esta es asignada al monton(heap)t.
+La memoria asignada dentro de la funcion `fun` persiste o se mantiene incluso despues de que la funcion finaliza su ejecucion, ya que esta es asignada al monton(heap).
 
-Ejemplo 7, Desasignación de memoria de forma apropiada despues de la llamada a una funcion:
+**Ejemplo 7**, Desasignación de memoria de forma apropiada despues de la llamada a una funcion:
 ```cpp
     #include <iostream>
     using namespace std;
