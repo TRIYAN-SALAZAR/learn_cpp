@@ -110,9 +110,13 @@ Output:
 
 El codigo genera un error de compilación debido a que se quiere acceder a un miembro privado de la clase `B`, lo cual no es permitido.
 
+<br>
+
 ## Constructores
 
 Los constructores y destructores son funciones especiales que se utilizan para inicializar y limpiar objetos, respectivamente. Siendo vitales para la gestion eficiente de recursos, especialmente cuando se trata de la asignación de memoria dinámica o otros recursos del sistema.
+
+<br>
 
 ### ¿Qué es un constructor?
 Los constructores son funciones especiales que tienen el mismo nombre de la clase, sin tipo de retorno y se invocan automáticamente cuando se crea un objeto de esa clase. Los constructores pueden ser:
@@ -125,6 +129,8 @@ Los constructores son funciones especiales que tienen el mismo nombre de la clas
 - Se invocan automáticamente al crear un objeto.
 - No tienen tipo de retorno, ni siquiera `void`.
 - Pueden sobrecargarse, es decir, puedes tener múltiples constructores con diferentes parámetros en la misma clase.
+
+<br>
 
 Ejemplo 1, Constructor por defecto y con parámetros:
 
@@ -163,6 +169,8 @@ Ejemplo 1, Constructor por defecto y con parámetros:
     }
 ```
 
+<br>
+
 Ejemplo 2, lista de inicialización:
 
 ```cpp
@@ -194,6 +202,8 @@ Ejemplo 2, lista de inicialización:
         return 0;
     }
 ```
+
+<br>
 
 Ejemplo 3, Inicialización del constructor sin lista de inicializadores:
 ```cpp
@@ -240,6 +250,8 @@ Explicación:
 
 - **Problema**: El constructor se inicializa dos veces, lo que conduce a problemas en el rendimiento.
 
+<br>
+
 Ejemplo 4, Constructor con lista de inicializadores:
 ```cpp
     #include<iostream>
@@ -271,8 +283,12 @@ Explicación:
 1. Aqui, la clase `Main` utiliza una lista de inicializadores para inicializar el objeto `t` de prueba.
 - **Ventaja**: El objeto `t` es inicializado directamente, evitando la sobrecarga de la inicialización por defecto seguida de la asignación.
 
+<br>
+
 ## Constructor Copia
 El constructor copia crea un nuevo objeto como una copia de otro objeto ezistente. Si no se define explícitamente, el compilador genera uno por defecto que realiza una copia superficial. Para la memoria dinámica, es necesario un constructor de copias definido por el usuario para realizar una copia profunda.
+
+<br>
 
 Ejemplo 5, Copia Superficial vs Copia Profunda:
 ```cpp
@@ -328,8 +344,12 @@ Explicación:
 3. Sin el constructor de copia personalizado, ambos objetos compartirían el mismo puntero, lo que podría causar errores al liberar la memoria.
 4. El destructor `~Test()` libera la memoria asignada para evitar fugas de memoria.
 
+<br>
+
 ## Destructores
 Los destructores son funciones especiales que libera los recursos asignados cuando el objeto es borrado o destruido. Estos tienen el mismo nombre que la clase, pero precedidos por un símbolo de tilde `~` y no tienen parámetros ni tipo de retorno.
+
+<br>
 
 Ejemplo 6, Destructor:
 ```cpp
